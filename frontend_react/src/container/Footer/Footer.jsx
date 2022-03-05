@@ -4,7 +4,6 @@ import { images } from '../../constants';
 import { AppWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
 import './Footer.scss';
-import resume from "../Footer/Resume.pdf";
 
 const Footer = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -55,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-card">
           <img src={images.resume} alt="Resume" />
-          <a href="{resume}" className="p-text" target="_blank">Resume</a>
+          <a href="https://drive.google.com/file/d/1pzkeWBQTGLb-mdAOG13oak8Ijr4w5ccF/view?usp=sharing" className="p-text" target="_blank">Resume</a>
         </div>
       </div>
       {!isFormSubmitted ? (

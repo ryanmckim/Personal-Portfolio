@@ -1,6 +1,6 @@
 export default {
-  name: "experience",
-  title: "Experience",
+  name: "experiences",
+  title: "Experiences",
   type: "document",
   fields: [
     {
@@ -12,7 +12,7 @@ export default {
       name: "works",
       title: "Works",
       type: "array",
-      of: [{ type: "experience" }],
+      of: [{ type: "workExperience" }],
     },
   ],
 };
