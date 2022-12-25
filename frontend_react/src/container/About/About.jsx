@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">I am an aspiring Computer Science student at the University of British Columbia who aims to deepen my understanding in various areas of technology.</h2>
+      <h2 className="head-text">I am an aspiring Computer Science student at the University of British Columbia who aims to deepen my understanding in various areas of the field.</h2>
 
       <div className="app__profiles">
         {abouts.map((about, index) => (
@@ -29,7 +29,7 @@ const About = () => {
             className="app__profile-item"
             key={about.title + index}
           >
-            <img src={urlFor(about.imgUrl)} alt={about.title} />
+            {about.imgUrl && (<img src={urlFor(about.imgUrl).url()} alt={about.title} />)}
             <h2 className="bold-text" style={{ marginTop: 20 }}>{about.title}</h2>
             <p className="p-text" style={{ marginTop: 10 }}>{about.description}</p>
           </motion.div>
