@@ -5,7 +5,6 @@ import {
   Footer,
   Header,
   Skills,
-  //Testimonial,
   Work,
 } from "./container";
 import { Navbar } from "./components";
@@ -18,7 +17,6 @@ const App = () => (
     <About />
     <Work />
     <Skills />
-    {/* <Testimonial /> */}
     <Footer />
   </div>
 );
